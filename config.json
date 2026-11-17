@@ -1,0 +1,11 @@
+{
+    "app_name": "rooster",
+    "version": "0.1.0",
+    "debug": true,
+    "max_connections": 16,
+    "server": {
+        "host": "127.0.0.1",
+        "port": 8080
+    },
+    "features": ["logging", "metrics", "cache"]
+}
