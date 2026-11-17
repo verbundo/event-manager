@@ -1,0 +1,7 @@
+###
+
+GET https://localhost:8843/
+
+###
+
+GET https://localhost:8843/test

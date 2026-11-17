@@ -1,11 +1,21 @@
 {
-    "app_name": "rooster",
-    "version": "0.1.0",
-    "debug": true,
-    "max_connections": 16,
-    "server": {
-        "host": "127.0.0.1",
-        "port": 8080
-    },
-    "features": ["logging", "metrics", "cache"]
+  "app_name": "rooster",
+  "version": "0.1.0",
+  "debug": true,
+  "max_connections": 16,
+  "http_server": {
+    "host": "127.0.0.1",
+    "port": 8843,
+    "http11": true,
+    "http2": true,
+    "http3": false,
+    "ssl": {
+      "enabled": true,
+      "certificate_file": "ssl/server.crt",
+      "key_file": "ssl/server.key",
+      "min_version": "TLSv1.2",
+      "cipher_list": "ECDHE+AESGCM:ECDHE+CHACHA20"
+    }
+  },
+  "features": ["logging", "metrics", "cache"]
 }
